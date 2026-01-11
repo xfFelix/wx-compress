@@ -1,0 +1,47 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "esnext",
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "miniprogram-api-typings",
+      "node"
+    ],
+    // and npm install -D @types/node
+    // Other Outputs
+    "sourceMap": false,
+    "moduleResolution": "node",
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    // Recommended Options
+    "strict": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    // "declaration": true, /* 生成相应的 '.d.ts' file. */
+    // "declarationDir": "./lib/types", /* 类型声明文件输出目录 */
+    // "emitDeclarationOnly": true, /* 只生成声明文件，不生成 js 文件*/
+  },
+  "include": [
+    "src/*.ts",
+    "index.d.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

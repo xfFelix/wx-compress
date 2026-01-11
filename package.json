@@ -1,0 +1,73 @@
+{
+  "name": "wx-compress",
+  "version": "1.0.1",
+  "description": "微信小程序压缩组件",
+  "main": "./lib/index.cjs.js",
+  "module": "./lib/index.esm.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    "import": "./lib/index.esm.js",
+    "require": "./lib/index.cjs.js",
+    "default": "./lib/index.esm.js"
+  },
+  "scripts": {
+    "dev": "rollup -w -c",
+    "build": "rollup -c",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xfFelix/wx-compress.git"
+  },
+  "keywords": [
+    "miniprogram",
+    "compress",
+    "js"
+  ],
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "felix",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/plugin-transform-runtime": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@eslint/js": "^9.37.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/node": "^24.5.2",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
+    "miniprogram-api-typings": "^4.1.0",
+    "prettier": "^3.6.2",
+    "rollup": "^4.52.3",
+    "rollup-plugin-delete": "^3.0.1",
+    "rollup-plugin-dts": "^6.2.3",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "uzip": "^0.20201231.0"
+  }
+}
