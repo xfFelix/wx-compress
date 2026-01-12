@@ -1,5 +1,6 @@
 import compress from "./image-compression";
 import { getImageInfo, getFileSize } from "./utils";
+import {ACCEPT_LIST} from './config'
 
 /**
  * Compress an image file.
@@ -34,6 +35,12 @@ async function imageCompression(file, options) {
   };
 
   const img = await getImageInfo(file);
+  const isAcceptedType = ACCEPT_LIST.includes(img.type?.toLowerCase());
+  if (!isAcceptedType) {
+    throw new Error(
+      `The image type ${img.type} is not supported. Only ${ACCEPT_LIST.join(' or ')} are supported.`,
+    );
+  }
   const size = await getFileSize(file);
 
   compressedFile = await compress(file, { ...opts, img: { ...img, size } });

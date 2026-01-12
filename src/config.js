@@ -28,3 +28,5 @@ export const ORIENTATION_MAP = {
   right: 6,
   "right-mirrored": 7,
 };
+
+export const ACCEPT_LIST = ['jpeg', 'png']
