@@ -1,6 +1,6 @@
 {
   "name": "wx-compress",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "微信小程序压缩组件",
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",
